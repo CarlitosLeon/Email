@@ -33,8 +33,8 @@ newEmail: envioEmail = new envioEmail();
 config: any = {
   placeholder:'Escriba Aqui',
   tabsize:2,
-  height:'100px',
-  width:'860px',
+  height:'335px',
+  width:'735px',
   airMode: false,
   tabDisable: true,
   popover: {
@@ -67,7 +67,7 @@ config: any = {
   },
   uploadImagePath: 'canvas/uploadimg',
   toolbar: [
-    ['misc', ['undo', 'redo']],
+   /* ['misc', ['undo', 'redo']],*/
     [
       'font',
       [
@@ -82,12 +82,12 @@ config: any = {
     ],
     ['fontsize', ['fontname', 'fontsize', 'color']],
     ['para', ['style0', 'ul', 'ol', 'paragraph']],
-    ['insert', ['picture', 'link']],
+    ['insert', ['picture'/*, 'link'*/]],
     ['customButtons', ['testBtn']]
   ],
-  buttons: {
+  /*buttons: {
     testBtn: this.customButton
-  },
+  },*/
   codeviewFilter: true,
   codeviewFilterRegex: /<\/*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|ilayer|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|t(?:itle|extarea)|xml|.*onmouseover)[^>]*?>/gi,
   codeviewIframeFilter: true
